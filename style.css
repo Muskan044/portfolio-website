@@ -346,18 +346,6 @@ p{
     animation-delay: 2.5s;
 }
 
-@media screen and (min-width: 768px) {
-   .cta {
-    font-size: 2.5rem;
-    padding: 20px 60px;
-   } 
-   h1.section-title{
-    font-size: 6rem;
-   }
-   #hero h1{
-    font-size: 7rem;
-   }
-}
 
 /* service section */
 #services .services {
@@ -417,12 +405,7 @@ p{
     opacity: 0.9;
     z-index: -1;
 }
-@media only screen and (min-width: 768px) {
-    #services  .service-bottom .service-item {
-        flex-basis: 45%;
-        margin: 2.5%;
-    }
-}
+
 @media only screen and (min-width: 1200px) {
     #services  .service-bottom .service-item {
         flex-basis: 22%;
@@ -501,26 +484,6 @@ p{
     transform: scale(1.1);
 }
 
-@media only screen and (min-width: 768px) {
-    #projects  .project-item {
-        flex-direction: row;
-    }
-    #projects .project-item:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-    #projects .project-item {
-        height: 400px;
-        margin: 0;
-        width: 100%;
-        border-radius: 0;
-    }
-    #projects .all-projects .project-img {
-        height: 100%;
-    }
-    #projects .all-projects .project-info {
-        height: 100%;
-    }
-}
 
 /* about */
 
@@ -567,7 +530,93 @@ p{
     font-weight: 500;
     line-height: 2rem;
 }
+
+
+/* footer */
+#footer {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+#footer .footer {
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+#footer h2 {
+    color: white;
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#footer .social-icons {
+    display: flex;
+    margin-bottom: 30px;
+}
+#footer .social-item {
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+#footer p {
+    color: white;
+    font-size: 1.3rem;
+}
+#footer .social-item img {
+    filter: grayscale(1);
+    transition: 9.3s ease filter;
+}
+#footer .social-item:hover img {
+    filter: grayscale(0);
+}
+
+
+
+
+
+/* media queries */
 @media only screen and (min-width: 768px) {
+
+/* hero section */
+.cta {
+    font-size: 2.5rem;
+    padding: 20px 60px;
+   } 
+   h1.section-title{
+    font-size: 6rem;
+   }
+   #hero h1{
+    font-size: 7rem;
+   }
+
+    /* services */
+    #services  .service-bottom .service-item {
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
+
+    /* projects */
+    #projects  .project-item {
+        flex-direction: row;
+    }
+    #projects .project-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    #projects .project-item {
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    #projects .all-projects .project-img {
+        height: 100%;
+    }
+    #projects .all-projects .project-info {
+        height: 100%;
+    }
+
+    /* contact */
     #contact .contact{
         flex-direction: column;
         padding: 100px 0;
