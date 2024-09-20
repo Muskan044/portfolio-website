@@ -486,7 +486,63 @@ p{
 
 
 /* about */
-
+.about-me{
+    display: flex;
+    margin: 180px 30px;
+    justify-content: space-evenly;
+    place-items: center;
+  }
+  .about-me #about-data{
+    padding: 0 20px;
+  }
+  .about-me h1{
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+  .about-me h2{
+    padding: 10px 0;
+    font-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-me p{
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  #about-data a {
+    text-decoration: none;
+    border: 3px solid crimson;
+    padding: 10px 30px;
+    color: #000000;
+    background-color: #ffffff; 
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease; 
+    display: inline-block; 
+  }
+  
+  #about-data a:hover {
+    background-color: crimson; 
+    color: #ffffff; 
+    border-color: crimson; 
+    transform: scale(1.05); 
+  }
+  
+  .about-me #about-image{
+    border: 7px solid  crimson;
+    
+    
+  }
+  .about-me img {
+    position: relative;
+    top: -30px;
+    left: 25px;
+    width: 300px;
+    height: 350px;
+  }
+   
+  
 
 
 /* contact */
